@@ -39,6 +39,7 @@ defmodule NervesTeamDevice.MixProject do
       {:shoehorn, "~> 0.4"},
       {:ring_logger, "~> 0.6"},
       {:toolshed, "~> 0.2"},
+      {:nerves_team_ui, path: "../nerves_team_ui"},
 
       # Dependencies for all targets except :host
       {:nerves_runtime, "~> 0.6", targets: @all_targets},
@@ -47,6 +48,9 @@ defmodule NervesTeamDevice.MixProject do
       {:nerves_key, "~> 0.3", targets: @all_targets},
       {:nerves_key_pkcs11, "~> 0.2", targets: @all_targets},
       {:nerves_time, "~> 0.2", targets: @all_targets},
+      {:scenic_driver_oled_bonnet,
+        github: "nerves-training/scenic_driver_oled_bonnet",
+        targets: @all_targets},
 
       # Dependencies for specific targets
       {:nerves_system_rpi0, "~> 1.6", runtime: false, targets: :rpi0},
