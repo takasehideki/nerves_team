@@ -43,6 +43,10 @@ defmodule NervesTeamDevice.MixProject do
       # Dependencies for all targets except :host
       {:nerves_runtime, "~> 0.6", targets: @all_targets},
       {:nerves_init_gadget, "~> 0.4", targets: @all_targets},
+      {:nerves_hub, "~> 0.2", targets: @all_targets},
+      {:nerves_key, "~> 0.3", targets: @all_targets},
+      {:nerves_key_pkcs11, "~> 0.2", targets: @all_targets},
+      {:nerves_time, "~> 0.2", targets: @all_targets},
 
       # Dependencies for specific targets
       {:nerves_system_rpi0, "~> 1.6", runtime: false, targets: :rpi0},
